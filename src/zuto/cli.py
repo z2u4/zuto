@@ -1,10 +1,11 @@
 import click
-from .base import Zuto
+
 import os
 
 @click.command()
 @click.option("-p", "--path", type=click.Path(exists=True), help="Path to the tasks folder")
 def cli(path):
+    from .base import Zuto
     if not path:
         path = os.getcwd()
 
