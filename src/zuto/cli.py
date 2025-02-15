@@ -1,5 +1,5 @@
 import click
-from zuto import Zuto
+from . import Zuto
 import os
 
 @click.command()
